@@ -194,8 +194,8 @@
 	[
 		{
 			"byteLength" : 124988,
-			"name" : "model",
-			"uri" : "model.bin"
+			"name" : "car",
+			"uri" : "car.bin"
 		}
 	],
 	"materials" : 
