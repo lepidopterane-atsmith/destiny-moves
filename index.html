@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cassie's dream</title>
+    <meta name="Cassie's dream" content="Cassie's dream">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+    <!-- If you remix this you owe me a soda irl -->
+    <!-- https://github.com/feiss/aframe-environment-component/ is how I did the environment part -->
+    
+    <!-- Asset Credits
+     song: Running in the 90s (Hardcore Rave Mix) by NJB https://www.youtube.com/watch?v=yt6B7X1FDNU
+    -->
+  
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="tree_obj" src="Axe_OBJ.obj"></a-asset-item>
+      </a-assets>
+  
+      <a-entity environment="preset: contact; ground: none; dressingAmount: 500; dressingScale: 50; dressingUniformScale: false; dressingColor: #318066; skyType: color; skyColor: #007744"></a-entity>
+      
+      <a-sky src="https://66.media.tumblr.com/5ff3e945a40fd3c4862175900bad7fbf/tumblr_pbf7q2G0E91wcookgo6_1280.jpg"></a-sky>
+       
+      <!--a-torus-knot src="https://66.media.tumblr.com/cfa2024dafc7f0eb1fed6b63cd659ccc/tumblr_otcqfzMkn51td525ko1_400.gif" position="2 4.5 -8" z arc="100" p="-1" q="70" radius="10" radius-tubular="1"></a-torus-knot-->
+      <!--a-cone src="https://i.imgur.com/mYmmbrp.jpg" height="2" radius-top="0.1" position="0 1 -6"></a-cone-->
+
+      <a-plane sound="src: url(https://cdn.glitch.com/15c5cf2a-ae33-43d6-b99c-357bf552416f%2FRunning%20In%20The%2090s%20(Hardcore%20Rave%20Edit).mp3?1553222575045); on: click; 
+                      autoplay: true; loop: true"
+               src="https://cdn.glitch.com/15c5cf2a-ae33-43d6-b99c-357bf552416f%2Fimage.png?1553222345657" rotation="-90 0 0" height="100" width="100" metalness="0.3"></a-plane>
+      
+      <a-light type="ambient" color="#84D451">
+        <a-animation attribute="intensity" from="1" to="3" dur="500" easing="linear" direction="alternate" repeat="indefinite"></a-animation>
+      </a-light>
+    </a-scene>
+  </body>
+</html>
